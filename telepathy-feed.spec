@@ -1,4 +1,5 @@
 Summary:	Galago feed for Telepathy
+Summary(pl.UTF-8):	Feed Galago dla Telepathy
 Name:		telepathy-feed
 Version:	0.13
 Release:	1
@@ -16,7 +17,10 @@ BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Galago feed for Telepathy
+Galago feed for Telepathy.
+
+%description -l pl.UTF-8
+Feed Galago dla Telepathy.
 
 %prep
 %setup -q
