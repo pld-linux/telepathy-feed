@@ -5,15 +5,17 @@ Version:	0.13
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	http://telepathy.freedesktop.org/releases/telepathy-feed/%{name}-%{version}.tar.gz
+Source0:	https://telepathy.freedesktop.org/releases/telepathy-feed/%{name}-%{version}.tar.gz
 # Source0-md5:	ff6273a82c96db813526ea599ac3b6ff
-URL:		http://telepathy.freedesktop.org/wiki/
+URL:		https://telepathy.freedesktop.org/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.8
-BuildRequires:	dbus-glib-devel >= 0.61
-BuildRequires:	libgalago-devel
+BuildRequires:	libgalago-devel >= 0.3.3.90
+BuildRequires:	libtelepathy-devel >= 0.0.30
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+Requires:	libgalago >= 0.3.3.90
+Requires:	libtelepathy >= 0.0.30
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
